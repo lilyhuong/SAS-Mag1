@@ -1,0 +1,262 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Exercice 1 - Python.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-LNoCC2ttXd9"
+      },
+      "source": [
+        "# Question 1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qhtdNIYYi4l-",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "88341fde-e481-4c57-ee98-5b3df21f5312"
+      },
+      "source": [
+        "1 + 1"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cEo89c06nEUi"
+      },
+      "source": [
+        "# Question 2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lM0WMbJFky45",
+        "outputId": "b955a48b-8ff4-49ad-b534-f5d63f0f2d88"
+      },
+      "source": [
+        "p = 6/18 * 100\n",
+        "print (\"The percentage of boy in this class is {:.2f} \".format(p) , \"%\" )"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The percentage of boy in this class is 33.33  %\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "2bPiB4jMmkOY"
+      },
+      "source": [
+        "Deuxième méthode, python 3.6 introduce \" literal string interpolation\" pour utiliser direct format decimal\n",
+        "\n",
+        "```\n",
+        "f'{p:.2f}'\n",
+        "```\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ELHAodM1mjF4",
+        "outputId": "2d810d63-09d6-438d-a5c0-dd8f391156f0"
+      },
+      "source": [
+        "p = 6/18 * 100\n",
+        "print (\"The percentage of boy in this class is \", f'{p:.2f} %')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The percentage of boy in this class is  33.33 %\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ke1DaNchnyFs"
+      },
+      "source": [
+        "# Question 3\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VL-SWIg9pkJL",
+        "outputId": "bd436dcf-ecb3-4047-929c-4f9c4f5d5180"
+      },
+      "source": [
+        "Valeur1 = int(input(\"Give me a number, please ! \"))\n",
+        "Valeur2 = int(input(\"Give me another number, please ! \"))\n",
+        "print (\"Their sum is: \" , (Valeur1 + Valeur2))\n",
+        "print (\"Their different is : \", (Valeur1 - Valeur2) )\n",
+        "print (\"Their product is : \", (Valeur1 * Valeur2) )\n",
+        "print (\"Their division is : \", (Valeur1 / Valeur2) )\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Give me a number, please ! 8\n",
+            "Give me another number, please ! 7\n",
+            "Their sum is:  15\n",
+            "Their different is :  1\n",
+            "Their product is :  56\n",
+            "Their division is :  1.1428571428571428\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7qy-DJlGrTMc"
+      },
+      "source": [
+        "# Quesion 4\n",
+        "1er méthode: on utilise biblothèque datetime pour chercher la date d'aujourd'hui\n",
+        "\n",
+        "> Exerporter la bib datetime\n",
+        "```\n",
+        "import datetime\n",
+        "```\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "```\n",
+        ".datetime.now()\n",
+        "```\n",
+        "\n",
+        "\n",
+        "> On affiche la date ajourd'hui dans la bib datetime\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pUHPUbnBrR_n",
+        "outputId": "1aa21767-f380-470a-b4d8-f9e803558787"
+      },
+      "source": [
+        "import datetime\n",
+        "name = input(\"What is your name ?\")\n",
+        "birthday = int(input(\"Hello ! \" + name + \" What is your year of birh: \"))\n",
+        "x = datetime.datetime.now()\n",
+        "yr = x.year - birthday\n",
+        "print (\"You are \" , yr , \"years old\" )"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "What is your name ?Anne\n",
+            "Hello ! Anne What is your year of birh: 2002\n",
+            "You are  18 years old\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Hvkt0lyFtGok"
+      },
+      "source": [
+        "# Question 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a2IOYKrytPik",
+        "outputId": "d92a195f-6198-4687-9259-e92c9bfcb70c"
+      },
+      "source": [
+        "a = \"Hi\"\n",
+        "b = \"110\"\n",
+        "c = 3\n",
+        "print ( a, \" ,\", b, c)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hi  , 110 3\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
